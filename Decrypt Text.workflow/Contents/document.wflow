@@ -59,7 +59,9 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>/usr/local/bin/gpg -r dan@dlo.me -e -a</string>
+					<string>PASSPHRASE=`security find-generic-password -s GPG -w`
+/usr/local/bin/gpg --decrypt --batch --passphrase "$PASSPHRASE"
+</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -84,7 +86,7 @@
 				<key>Class Name</key>
 				<string>RunShellScriptAction</string>
 				<key>InputUUID</key>
-				<string>41A8B101-7718-46F5-B0AF-6F92D6805114</string>
+				<string>420E0E9B-D90F-443D-A026-0B3D499EC942</string>
 				<key>Keywords</key>
 				<array>
 					<string>Shell</string>
@@ -94,9 +96,9 @@
 					<string>Unix</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>0A5199E4-06AC-4AB7-88BF-715847F47569</string>
+				<string>DF7D3B35-CD25-4AFF-8216-F75E8D02CC84</string>
 				<key>UUID</key>
-				<string>76995C28-75D7-49BB-840A-6CF5603714E0</string>
+				<string>2E0CE956-B6EF-4690-A412-1A76DB72FCC9</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Automator</string>
@@ -233,19 +235,21 @@
 				<key>Class Name</key>
 				<string>Paste_in_Frontmost_Application</string>
 				<key>InputUUID</key>
-				<string>654DE4BC-D915-4301-831A-C5AAD7A180F1</string>
+				<string>CA43A4BE-A502-4A5E-AC35-A59C2975E712</string>
 				<key>Keywords</key>
 				<array/>
 				<key>OutputUUID</key>
-				<string>3DCD1282-E3FE-401E-9414-835FFE64FACE</string>
+				<string>52749618-A662-41F2-9453-43DA82C29156</string>
 				<key>UUID</key>
-				<string>0FFE6B4C-CE4D-4B8A-B2F9-DAFBB6E7E1B7</string>
+				<string>E200DC3B-6BEB-46C2-B0C9-3372F4E5EE42</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>LaunchBar</string>
 				</array>
 				<key>arguments</key>
 				<dict/>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>nibPath</key>
 				<string>/Applications/LaunchBar.app/Contents/Library/Automator/Paste in Frontmost Application.action/Contents/Resources/en.lproj/main.nib</string>
 			</dict>
@@ -253,12 +257,12 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>26694E2E-5005-4EDD-98C5-00AF048DB2F0</key>
+		<key>BC4BE388-A4DD-4E59-9400-F2B9DCC3EC6D</key>
 		<dict>
 			<key>from</key>
-			<string>76995C28-75D7-49BB-840A-6CF5603714E0 - 76995C28-75D7-49BB-840A-6CF5603714E0</string>
+			<string>2E0CE956-B6EF-4690-A412-1A76DB72FCC9 - 2E0CE956-B6EF-4690-A412-1A76DB72FCC9</string>
 			<key>to</key>
-			<string>0FFE6B4C-CE4D-4B8A-B2F9-DAFBB6E7E1B7 - 0FFE6B4C-CE4D-4B8A-B2F9-DAFBB6E7E1B7</string>
+			<string>E200DC3B-6BEB-46C2-B0C9-3372F4E5EE42 - E200DC3B-6BEB-46C2-B0C9-3372F4E5EE42</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>
